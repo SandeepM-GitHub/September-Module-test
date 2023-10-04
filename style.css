@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.active:hover{
+    color: #509E2F !important;
+}
+
+.profile {
+    position: absolute;
+    top: 0.8rem;
+    right: 2rem;
+}
+
+.my-nav {
+    position: sticky !important;
+    top: 0px;
+    left: 0px;
+    z-index: 1100000;
+    background-color: white;
+}
+
+.navbar-brand {
+    margin-left: 2rem;
+}
+
+.navbar-toggler {
+    order: -1;
+    border: none;
+    margin: 3px;
+}
+
+.navbar-toggler:active {
+    border: none;
+}
+
+.navbar-nav {
+    margin-right: 6rem;
+}
+
+.collapse {
+    justify-content: right !important;
+}
+
+.container-fluid {
+    justify-content: left !important;
+    position: relative;
+}
+
+
+.hero-section{
+    background-image: url(assets/hero-pic.png);
+    background-size: 100%;
+    text-align: left;
+    color: aliceblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 355px;
+    border-radius: 30px;
+    margin-top: 40px;
+    object-fit: 100%;
+    vertical-align: middle;
+    padding: 2.6rem;
+}
+
+.hero-data{
+    padding-left: 8%;
+    padding-top: 70px;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.8rem;
+     
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    /* height: 42px; */
+    border-radius: 2px, 0px, 0px, 2px;
+    background: #F3F3F3;
+}
+
+/* .search-div:hover {
+    scale: 1.05;
+} */
+
+.search-input {
+    width: 100%;
+    border: none;
+    background-color: #F3F3F3;
+    outline: none;
+}
+
+.search-icon-1{
+    background-color: transparent;
+    height: 100%;
+    padding: 0.4rem;
+    display: inline-block;
+}
+
+
+.search-icon-2{
+    background-color: #509E2F;
+    height: 100%;
+    /* color: white; */
+    padding: 5px;
+    display: inline-block;
+}
+
+.recipes-types{
+    display: flex;
+    margin-top: 60px;
+}
+
+.card-img{
+    max-height: 200px;
+    object-fit: contain;
+}
+
+
+.all-recipes{
+    background: #EAAA00;
+    width: 236.8px;
+    height: 86px;
+    padding: 30px, 29.8px, 30px, 29px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.veg-recipes{
+    background: #C4D600;
+    width: 236.8px;
+    height: 86px;
+    padding: 30px, 29.8px, 30px, 29px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px
+
+}
+.nonveg-recipes{
+    background: #DC582A;
+    width: 236.8px;
+    height: 86px;
+    padding: 30px, 29.8px, 30px, 29px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px
+}
+
+button:hover{
+    scale: 1.3;
+    transition: all 0.25s ease-in;
+}
+
+.last-main{
+    display: grid;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.Rating_radio {
+    display: flex;
+    flex-direction: column;
+}
+
+/* input[type="checkbox"] {
+    margin-right: 0.8rem;
+  } */
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 50px;
+    margin-left: 70px; 
+}
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    height: 320px;
+    width: 300px;
+    margin-right: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.card-1 > p{
+    padding-left: 20px;
+}
+
+.card-name-rating , .card-time-like-comment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.card-name{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-rating, .card-comment{
+    padding-right: 15px;
+}
+
+.card-time{
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 5px;
+    color: #DC582A;
+}
+
+.card-like{
+    margin-left: 150px;
+}
+
+.row-1{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    width: 100vw;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+
+
+.col-1, .col-2, .col-3{
+    width: 30%;
+    margin: auto;
+}
+
+.btn-subscribe { 
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-inline: 10px;
+    padding: 3px 10px;
+}
+
+.btn-subscribe:hover {
+    transition: all 0.2s ease-in;
+    scale: 1.05;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.social-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: black;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+      margin-left: 0rem;
+    }
+    main {
+      padding: 1rem;
+    }
+    section {
+      margin: 10px 0px;
+    }
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 80%;
+      left: 20px;
+      margin: 10px;
+      line-height: 1rem;
+    }
+    .card-text {
+      font-size: 0.6rem;
+    }
+    .card-title {
+      font-size: 1rem;
+    }
+    .card-subtitle1 {
+      font-size: 0.7rem;
+    }
+    .fa-regular{
+      font-size: 0.7rem;
+    }
+    .btn {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      margin: 0.3rem;
+    }
+    .Product_show {
+      display: grid;
+      grid-template-areas: "side_menu"
+                            "product_area";
+    }
+  
+    .side-menu {
+      padding: 0.1rem;
+    }
+    .Rating_checkbox{
+      flex-direction: row;
+      gap: 30px;
+    }
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+    .product_area {
+      padding: 0.8rem;
+      gap: 0.5rem;
+    }
+    .card {
+      width: 10rem;
+      border-radius: 0.6rem;
+      padding: 0.3rem;
+    }
+    .card-text{
+      font-size: 1rem;
+    }
+    .card-text-orange{
+      font-size: 0.6rem;
+    }
+    .card-img-top {
+      border-radius: 0.6rem !important;
+      height: 8rem;
+    }
+    .card-body {
+      padding: 0.3rem;
+    }
+    .card-subtitle {
+      font-size: 0.5rem;
+    }
+    .rating-text {
+      font-size: 0.6rem;
+    }
+    .icon-rating {
+      gap: 1px;
+    }
+    .footer-content {
+      flex-direction: column;
+    }
+    .footer-text,
+    .footer-links,
+    .footer-contact {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

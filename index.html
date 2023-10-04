@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="logo-icon" href="assets/Cookpal 1.png" type="image/x-icon" />
+    <title>Cookpal - clone</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="my-nav navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/Cookpal 1.png" alt="Cookpal_logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">
+          <img src="assets/Cookpal 1.png" />
+        </a> -->
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Explore</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Help</a>
+            </li>
+            <li class="Profile nav-item">
+              <a href="#">
+                <img src="assets/Profile.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero-data">
+        <h4 style="color: #dc582a">Trending now</h4>
+        <h1>
+          Mike's famous salad<br />
+          with cheese
+        </h1>
+        <h4>By John Mike</h4>
+      </div>
+    </section>
+
+    <div class="search">
+      <h6>Search For Recipes</h6>
+      <div class="search-div">
+        <i class="search-icon-1 fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="search for recipes..."
+          class="search-input"
+          style="border: none; background: #f3f3f3"
+        />
+        <i
+          class="search-icon-2 fa-solid fa-magnifying-glass"
+          style="color: #a1a1a1"
+        ></i>
+      </div>
+    </div>
+
+    <div class="recipes-types">
+      <div class="all-recipes">
+        <button
+          style="background-color: #eaaa00; border: none; color: white"
+          id="All"
+        >
+          All Recipes >
+        </button>
+      </div>
+      <div class="veg-recipes">
+        <button
+          style="background-color: #c4d600; border: none; color: white"
+          id="Veg"
+        >
+          Veg Recipes only >
+        </button>
+      </div>
+      <div class="nonveg-recipes">
+        <button
+          style="background-color: #dc582a; border: none; color: white"
+          id="NVeg"
+        >
+          Non Veg Recipes >
+        </button>
+      </div>
+    </div>
+
+    <div class="last-main">
+      <div class="side-menu" id="side-menu">
+        <h3>Filters</h3>
+        <div class="ratings">
+          <h6>Rating</h6>
+          <div class="Rating_radio">
+            <div>
+              <input type="radio" id="4&Above" name="4&Above" data-valid="1" />
+              <label for="4&Above">4 and Above</label>
+              <br />
+            </div>
+            <div>
+              <input type="radio" id="below4" name="below4" data-valid="1" />
+              <label for="below4">Below 4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" id="cards">
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Veggie Delight</div>
+            <div class="card-rating"><img src="assets/star.png" />4.2</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">30 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Chicken Grill</div>
+            <div class="card-rating"><img src="assets/star.png" />4.5</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">45 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Cheese Pizza</div>
+            <div class="card-rating"><img src="assets/star.png" />4.1</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Steak</div>
+            <div class="card-rating"><img src="assets/star.png" />4.7</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Grilled Salmon</div>
+            <div class="card-rating"><img src="assets/star.png" />4.6</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Tomato Pasta</div>
+            <div class="card-rating"><img src="assets/star.png" />4.0</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Vegan Salad</div>
+            <div class="card-rating"><img src="assets/star.png" />3.9</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Fried Chicken</div>
+            <div class="card-rating"><img src="assets/star.png" />4.3</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Mushroom Risotto</div>
+            <div class="card-rating"><img src="assets/star.png" />4.5</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Burger</div>
+            <div class="card-rating"><img src="assets/star.png" />4.2</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Paneer Tikka</div>
+            <div class="card-rating"><img src="assets/star.png" />4.4</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">BBQ Ribs</div>
+            <div class="card-rating"><img src="assets/star.png" />4.6</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Caesar Salad</div>
+            <div class="card-rating"><img src="assets/star.png" />3.8</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Non Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Fish Tacos</div>
+            <div class="card-rating"><img src="assets/star.png" />4.3</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="card-1">
+          <img src="assets/food-pic.png" />
+          <p>Veg</p>
+          <div class="card-name-rating">
+            <div class="card-name">Chocolate Cake</div>
+            <div class="card-rating"><img src="assets/star.png" />4.9</div>
+          </div>
+          <div class="card-time-like-comment">
+            <div class="card-time">40 min</div>
+            <div class="card-like">
+              <img src="assets/like.png" />
+            </div>
+            <div class="card-comment">
+              <img src="assets/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row-1">
+        <div class="col-1">
+          <ul>
+            <li>
+              <a class="navbar-brand" href="#">
+                <img src="assets/Cookpal 1.png" />
+              </a>
+              <p>
+                Cookpal is a recipe website with a wide variety of delicious
+                recipes, easy-to-use search function. Join our community and
+                let's cook together!
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <h5>Company</h5>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Team</li>
+            <li>About us</li>
+            <li>Activity</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <h5>Resources</h5>
+            <li>Blog</li>
+            <li>Use Cases</li>
+            <li>Testimonials</li>
+            <li>Insights</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <a class="navbar-brand" href="#">
+            <img src="assets/Cookpal 1.png" />
+          </a>
+          <p>
+            Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+            aliquam.
+          </p>
+          <form>
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            /><i class="fa-solid fa-at left" style="color: #8f8f8f"></i>
+            <input
+              class="btn-subscribe"
+              type="button"
+              onclick="alert('Hurray! Your Email has been submitted. We will get you in touch very soon')"
+              value="Subscribe"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div class="row-2">
+        <div class="social">
+          <div class="social-tag">
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          </div>
+          <div class="social-tag">
+            <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+          </div>
+          <div class="social-tag">
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+          </div>
+          <div class="social-tag">
+            <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
