@@ -74,8 +74,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1.8rem;
-     
+    gap: 1.8rem;  
+}
+
+.search > h6 {
+    font-size: 29px;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+.side-menu {
+    margin: 2rem;
 }
 
 .search-div {
@@ -95,6 +104,7 @@ body {
     border: none;
     background-color: #F3F3F3;
     outline: none;
+    height: 39px;
 }
 
 .search-icon-1{
@@ -107,7 +117,7 @@ body {
 
 .search-icon-2{
     background-color: #509E2F;
-    height: 100%;
+    height: 200%;
     /* color: white; */
     padding: 5px;
     display: inline-block;
@@ -297,8 +307,8 @@ li{
     .navbar-brand {
       margin-left: 0rem;
     }
-    main {
-      padding: 1rem;
+    .hero-data {
+      padding: 1 rem;
     }
     section {
       margin: 10px 0px;
@@ -332,21 +342,21 @@ li{
     }
     .Product_show {
       display: grid;
-      grid-template-areas: "side_menu"
-                            "product_area";
+      grid-template-areas: "side-menu"
+                            "cards";
     }
   
     .side-menu {
       padding: 0.1rem;
     }
-    .Rating_checkbox{
+    .Rating-radio{
       flex-direction: row;
       gap: 30px;
     }
     input[type="checkbox"] {
       margin-right: 0.5rem;
     }
-    .product_area {
+    .cards {
       padding: 0.8rem;
       gap: 0.5rem;
     }
@@ -377,12 +387,10 @@ li{
     .icon-rating {
       gap: 1px;
     }
-    .footer-content {
+    .row-1 {
       flex-direction: column;
     }
-    .footer-text,
-    .footer-links,
-    .footer-contact {
+    .col-1, .col-2, .col-3 {
       width: 80%;
       display: flex;
       justify-content: center;
